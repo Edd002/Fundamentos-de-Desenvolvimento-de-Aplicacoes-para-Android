@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:onClick="verificar"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editDistanciaKm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Informe a distância em Km"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editPrecoLitroCombustivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Informe o preço do litro do combustível"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcularCreditoFrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularCreditoFrete"
+        android:text="Calcular Crédito para o Frete" />
+
+    <TextView
+        android:id="@+id/txtResultadoCreditoFrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
